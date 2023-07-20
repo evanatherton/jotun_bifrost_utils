@@ -25,6 +25,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+jotun/scripts/jotun/site-packages
+.DS_store
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
