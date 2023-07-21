@@ -13,7 +13,7 @@ Utilities have been tested in Maya 2023 and above with Bifrost 2.7.1, but may wo
 
 ## Installation
 
-1. Download the latest [release](https://github.com/AutodeskRoboticsLab/Mimic/releases) and copy `jotun/` and `jotun.mod` to your Maya modules directory, depending on your operating system:
+1. Download the latest [release](https://github.com/evanatherton/jotun_bifrost_utils/releases) and copy `jotun/` and `jotun.mod` to your Maya modules directory, depending on your operating system:
     ```
     macOS   ~/Library/Preferences/Autodesk/maya/modules
     Windows ~/Documents/maya/modules
