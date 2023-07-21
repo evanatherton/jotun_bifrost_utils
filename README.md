@@ -36,7 +36,6 @@ Utilities have been tested in Maya 2023 and above with Bifrost 2.7.1, but may wo
 
 ## Utilities
 
----
 ### `exprToCompound`
 
 Takes a mathematical expression and converts it into a Bifrost compound. Launch the tool with the `exprToCompound` MEL command and enter your expression using python syntax. The list of available operators can be found in [here](jotun/docs/expr_to_compound.md).
@@ -49,10 +48,6 @@ Takes a mathematical expression and converts it into a Bifrost compound. Launch 
 ### Catenary Solver
 
 The next utility planned for Jotun is a catenary curve solver for creating hanging ropes and cables.
-
-## Dependencies
-
-Jotun requires Autodesk Maya 2023 or later. To use the tools in this collection, you also need Bifrost installed and enabled.
 
 ## License
 
