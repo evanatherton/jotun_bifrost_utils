@@ -27,7 +27,7 @@ Utilities have been tested in Maya 2023 and above with Bifrost 2.7.1, but may wo
     ![load_plugins](jotun/images/jotun_load_plugins.png)
 
 
-3. Launch the desired utility by running the corresponding MEL command in the MEL command prompt at the bottom of the Maya UI. The MEL command for each utility matches the plugin name. i.e. to launch the `exprToCompound` utility, run `exprToCompound` in the MEL prompt. You can also assign the MEL command to a shelf button for continued use.
+3. Launch the desired utility by running the corresponding MEL command in the MEL command line at the bottom of the Maya UI. The MEL command for each utility matches the plugin name. i.e. to launch the `exprToCompound` utility, run `exprToCompound` in the MEL command line. You can also assign the MEL command to a shelf button for continued use.
 
     ![jotun_mel_comand](jotun/images/jotun_mel_command.png)
 
