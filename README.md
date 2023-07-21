@@ -8,9 +8,7 @@ Utilities have been tested in Maya 2023 and above with Bifrost 2.7.1, but may wo
 
 - [Installation](#installation)
 - [Utilities](#utilities)
-- [Future Utilities](#future-utilities)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
+- [Future Development](#future-development)
 - [License](#license)
 
 ## Installation
