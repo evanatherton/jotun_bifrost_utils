@@ -62,6 +62,7 @@ class CompoundBuilder:
         self.nodes = {}
         self.queue = Queue()
         self.mapper = NodeMapper()
+        self.arg_connections = {}  # Keep track of all arguments that have been connected
 
         try:
             self._build_graph()
@@ -76,7 +77,7 @@ class CompoundBuilder:
 
     def _create_node_mapping(self, sympy_obj):
         """
-        Maps the input sumpy_obj to a corresponding bifrost node and adds it to the self.nodes dict
+        Maps the input sympy_obj to a corresponding bifrost node and adds it to the self.nodes dict
 
         Parameters
         ----------
@@ -88,7 +89,7 @@ class CompoundBuilder:
         None
             Creates a bifrost node for the input sympy object, if necessary, and stores the relationship in self.nodes
         """
-        # If the node already exists, return it.
+        # If the node already exists, return
         if sympy_obj in self.nodes:
             return
 
@@ -131,7 +132,16 @@ class CompoundBuilder:
             if not isinstance(obj, Symbol):
                 for arg in obj.args:
                     self._create_node_mapping(arg)
-                    self.queue.put((arg, obj))
+
+                    # Check whether the argument has been connected before
+                    if arg not in self.arg_connections.get(obj, []):
+                        self.queue.put((arg, obj))
+
+                        # Add the argument to the list of connected arguments
+                        if obj in self.arg_connections:
+                            self.arg_connections[obj].append(arg)
+                        else:
+                            self.arg_connections[obj] = [arg]
 
     def _connect_nodes(self):
         """
