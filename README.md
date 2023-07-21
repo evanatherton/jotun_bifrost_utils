@@ -13,7 +13,7 @@ Utilities have been tested in Maya 2023 and above with Bifrost 2.7.1, but may wo
 
 ## Installation
 
-1. Download the latest [release](https://github.com/AutodeskRoboticsLab/Mimic/releases) and copy `jotun/` and `jotun.mod` to your Maya modules directory, depending on your operating system:
+1. Download the latest [release](https://github.com/evanatherton/jotun_bifrost_utils/releases) and copy `jotun/` and `jotun.mod` to your Maya modules directory, depending on your operating system:
     ```
     macOS   ~/Library/Preferences/Autodesk/maya/modules
     Windows ~/Documents/maya/modules
@@ -23,12 +23,12 @@ Utilities have been tested in Maya 2023 and above with Bifrost 2.7.1, but may wo
 
 
 2. Launch Maya and load the available plugins in the `*/modules/jutun/plug-ins` section of Maya's Plug-in manager: `Windows > Settings/Preferences > Plug-in Manager`
-<br/>  
+
     ![load_plugins](jotun/images/jotun_load_plugins.png)
 
 
-3. Launch the desired utility by running the corresponding MEL command in the MEL command prompt at the bottom of the Maya UI. The MEL command for each utility matches the plugin name. i.e. to launch the `exprToCompound` utility, run `exprToCompound` in the MEL prompt. You can also assign the MEL command to a shelf button for continued use.
-<br/>  
+3. Launch the desired utility by running the corresponding MEL command in the MEL command line at the bottom of the Maya UI. The MEL command for each utility matches the plugin name. i.e. to launch the `exprToCompound` utility, run `exprToCompound` in the MEL command line. You can also assign the MEL command to a shelf button for continued use.
+
     ![jotun_mel_comand](jotun/images/jotun_mel_command.png)
 
 
