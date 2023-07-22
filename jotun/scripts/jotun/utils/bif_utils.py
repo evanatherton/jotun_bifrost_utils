@@ -411,6 +411,7 @@ def add_backdrop(bif_shape, compound_name, label, container='/'):
     backdrop_name = compound_name + '_backdrop'
     cmds.vnnCompound(bif_shape, container, addBackdrop=backdrop_name)
     cmds.vnnCompound(bif_shape, container, setAnnotationMetaDataValue=[backdrop_name, 'title', label])
+    cmds.refresh()
 
     return backdrop_name
 
@@ -451,7 +452,7 @@ def add_sticky_note(bif_shape, container, text, name='sticky_note', color='#ffa5
     cmds.vnnCompound(bif_shape, container, addStickyNote=name)
     cmds.vnnCompound(bif_shape, container, setAnnotationMetaDataValue=[name, 'color', color])
     cmds.vnnCompound(bif_shape, container, setAnnotationMetaDataValue=[name, 'text', text])
-
+    cmds.refresh()
 
 def frame_compound(compound_path):
     """
@@ -470,8 +471,9 @@ def frame_compound(compound_path):
 
     # Select the compound to add the backdrop behind
     cmds.vnnCompoundEditor(name='bifrostGraphEditorControl', selectNodes=compound_path.split('/')[-1])
-
     cmds.vnnCompoundEditor(name='bifrostGraphEditorControl', sendKey=[70, 0])
+
+    cmds.refresh()
 
 
 def get_selected_bif_shapes():
