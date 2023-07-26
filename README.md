@@ -1,6 +1,6 @@
 # Jotun Bifrost Utils
 
-Jotun is a collection of utilities for working with Bifrost in Autodesk. These tools are designed to streamline the process of generating and manipulating Bifrost compounds for specific tasks. There is currently a single utility `exprToCompound` which takes a mathematical expression and converts it to a Bifrost compound. I have a number of additional utilities that I am working on that I plan on including here as soon as I can.
+Jotun is a collection of utilities for working with Bifrost in Autodesk Maya. There is currently a single utility `exprToCompound` which takes a mathematical expression and converts it to a Bifrost compound. I have a number of additional utilities that I am working on that I plan on including here as soon as I can.
 
 Utilities have been tested in Maya 2023 and above with Bifrost 2.7.1, but may work in previous version.
 
